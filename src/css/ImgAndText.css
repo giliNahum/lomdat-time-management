@@ -1,0 +1,60 @@
+.nextBtnImgText {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    cursor: pointer;
+}
+
+.textStory {
+    white-space: pre-line;
+    width: 20rem;
+    padding: 1.8rem;
+    text-align: right;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.9); /* חצי שקוף */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  
+    border-radius: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "assistant";
+}
+
+.textStory-img {
+    width: 20rem;
+}
+
+.ImgAndText {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+@media (max-height: 800px) {
+    .ImgAndText {
+        margin-top: 0rem;
+    }
+    
+}
+@media (max-height: 750px) {
+    .ImgAndText {
+        margin-top: 0rem;
+        font-size: 0.8rem;
+    }
+    .textStory {
+        margin-top:-2rem;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    .textStory {
+        width: 18rem;
+        font-size: 0.8rem;
+    }
+    
+}
